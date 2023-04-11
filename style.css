@@ -1,0 +1,95 @@
+:root {
+  --primary: #6a5af9;
+  --secondary: #d66efd;
+}
+/* ================================= */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* ===================================== */
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  width: 100%;
+}
+.form {
+  margin-top: 20px;
+  width: 100%;
+}
+.add-todo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.todo-input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.todo-meta {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #6a5af9;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+.todo-item {
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.todo-left,
+.todo-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.todo-right span i {
+  pointer-events: none;
+}
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+}
+.todo-checkbox:checked ~ .todo-text {
+  text-decoration: line-through;
+}
+.todo-edit,
+.todo-delete {
+  width: 30px;
+  height: 30px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+.todo-edit {
+  background-color: #6a5af9;
+}
+.todo-delete {
+  background-color: red;
+}
+.
